@@ -20,8 +20,8 @@
         width: 100%;
         height: 80px;
         background-color: #AB88FF;
-        /*display: flex;
-        justify-content: space-between;*/
+        display: flex;
+        justify-content: space-between;
     }
     .header__img{
         width: 200px;
@@ -42,6 +42,22 @@
         position: absolute;
         width: 100px;
         text-align: right;
+    }
+
+    /*El hover permite estilizar un elemento cuando pasas el mouse sobre el*/
+    .header__menu:hover ul, ul:hover{
+        /*hover ul = se estiliza cuando se pase sobre las ul en el menu
+          ul:hover = estiliza las ul que existan en el documento*/
+        display: inline;
+    }
+    .header__menu li{
+        margin: 10px 0px;
+        text-decoration: none;
+    }
+    .header__menu li a{
+        font-family: 'Lato';
+        color: white;
+        text-decoration: none;
     }
 </style>
 <body>
