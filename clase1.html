@@ -5,24 +5,124 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <script>
-        function myFunction(){
-            alert("Te pille loquito")
+    <style>
+        body{
+            margin: 0;
+            background-image: url("https://www.elcomercio.com/files/article_main/uploads/2019/08/16/5d56f4785cef7.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color:  rgba(94,29,252,0.5);
+            font-family: 'Muli', sans-serif;
         }
-    </script>
+    
+        .header{
+            width: 100%;
+            height: 80px;
+            background-color: #5E1DFC;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header__img{
+            width: 200px;
+            margin: 10px 5px;
+        }
+        .header__menu{
+            margin-right: 30px;
+            align-items: center;
+        }
+        .header__menu--profile{
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+        }
+    
+        .header__menu--profile img{
+            margin-right: 8px;
+            width: 40px;
+            height: 40px;
+            
+        }
+        .header__menu--profile p{
+            margin: 0;
+            color: white;
+        }
+    
+        .header__menu ul{
+            display: none;
+            margin: 0px 0px 0px -14px;
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+        }
+    
+        /*El hover permite estilizar un elemento cuando pasas el mouse sobre el*/
+        .header__menu:hover ul, ul:hover{
+            /*hover ul = se estiliza cuando se pase sobre las ul en el menu
+              ul:hover = estiliza las ul que existan en el documento*/
+            display: inline;
+        }
+        .header__menu li{
+            margin: 10px 0px;
+        }
+        .header__menu li a{
+            color: white;
+            text-decoration: none;
+        }
+        .header__menu li a:hover{
+            text-decoration: underline;
+        }
+    
+        /*Estilos para el buscador*/
+        .section{
+            height: 300px;
+        }
+        .section__title{
+            font-size: 25px;
+            color: white;
+        }
+        .section__input{
+            background-color: rgba(255,255,255,0.1);
+            border-color: white;
+            color: white;
+            padding: 0 20px;
+            width: 70%;
+            height: 50px;
+            border-radius: 50px;
+            border-style: solid;
+            border-width: medium;
+            font-family: 'Muli', sans-serif;
+            font-size: 16px;
+            outline: none;
+        }
+        /*Codigo para el texto dentro del buscador*/
+        ::placeholder{
+            color: white;
+        }
+    </style>
     <body>
-        <header>
-            <ol>
-                <li>Inicio</li>
-                <li>Cuenta</li>
-            </ol>
+        <header class="header">
+            <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png">
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="img/user-icon.png" alt="User">
+                    <p>Perfil</p>
+                </div>
+                <ul>
+                    <li><a href="/">Cuenta</a></li>
+                    <li><a href="/">Cerrar Sesión</a></li>
+                </ul>
+            </div>
         </header>
-        <section>
-            <em>Hola</em>
-            <i>Hola</i>
+        <section class="section">
+            <h2 class="section__title">¿Que quieres ver hoy prro?</h2>
+            <input class="section__input" type="text" placeholder="Buscar...">
         </section>
         <footer>
-            Contactanos
+
         </footer>
     </body>
-</html> 
+</html>
