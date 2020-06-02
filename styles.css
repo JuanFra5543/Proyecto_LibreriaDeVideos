@@ -14,6 +14,9 @@ body{
     width: 200px;
     margin: 10px 5px;
 }
+/*login sera el bloque van los estilos de la seccion
+mas externa, se va a utilizar la estructura de 
+BEM (Bloque-Elemento-Modificador)*/
 .login{
     background: linear-gradient(#21C08B,#5E1DFC);
     display: flex;
@@ -23,6 +26,8 @@ body{
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
+/*Dentro del Elemento __container estan
+los estilos para la "carta" de inicio de sesión*/
 .login__container{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 40px;
@@ -32,24 +37,31 @@ body{
     min-height: 700px;
     width: 300px;
 }
+
+/*En el Modificador --form estan los elementos
+input y el button que permiten el ingreso de
+usuario y contraseña*/
 .login__container--form{
     display: flex;
     flex-direction: column;
 }
 
-.login__container--form label{
-    font-size: 14px;
-}
+/*En el Modificador --rember-me estan los elementos
+de checkbox para el recuerdame y un link a la pagina
+de "Olvide mi contraseña"*/
 .login__container--remember-me{
     margin-top: 10px;
     color: white;
     display: flex;
     justify-content: space-between;
-}
-.login__container--remember-me a{
     font-size: 14px;
+}
+
+/*Para estilizar los links de "Recuerdame"*/
+.login__container--remember-me a{
     text-decoration: none;
     color: white;
+    align-self: center;
 }
 
 /*pseudo-clase hover permite que cuando el puntero se 
