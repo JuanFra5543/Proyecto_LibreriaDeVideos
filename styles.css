@@ -104,6 +104,21 @@ google y de twitter*/
     text-decoration: underline;
 }
 
+/*Estilos para el link del Inicio sesión*/
+.login__container--ini-ses{
+    display: flex;
+    justify-content: center;
+}
+.login__container--ini-ses a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.login__container--ini-ses a:hover{
+    text-decoration: underline;
+}
+
 /*En .input se estiliza el formulario de ingreso
 de texto al igual que el boton de "Iniciar Sesión"
 -------------------------------------------------
