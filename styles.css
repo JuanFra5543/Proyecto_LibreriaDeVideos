@@ -18,7 +18,7 @@ body{
 mas externa, se va a utilizar la estructura de 
 BEM (Bloque-Elemento-Modificador)*/
 .login{
-    background: linear-gradient(#21C08B,#5E1DFC);
+    background: linear-gradient(#21C08B,#8F57FD);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +36,9 @@ los estilos para la "carta" de inicio de sesión*/
     color: white;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 /*En el Modificador --form estan los elementos
@@ -77,4 +80,74 @@ que se encuentren dentro de ese elemento*/
     align-items: center;
     font-size: 14px;
     margin: 10px 0;
+}
+
+/*Aqui se le corrige el tamaño de los iconos de 
+google y de twitter*/
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+/*Estilos para el container y link del registro*/
+.login__container--register{
+    font-size: 14px;
+}
+.login__container--register a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.login__container--register a:hover{
+    text-decoration: underline;
+}
+
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    height: 50px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+/*Estos son los estilos para el footer de la pagina*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #8F57FD;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Esto es para darle estilo a los links que se encuentran
+en el pie de la pagina*/
+.footer a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 5px;
 }
