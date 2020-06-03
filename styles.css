@@ -34,8 +34,8 @@ los estilos para la "carta" de inicio de sesión*/
     padding: 60px 40px;
     border: 2px solid white;
     color: white;
-    min-height: 700px;
-    width: 300px;
+    min-height: 650px;
+    width: 350px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
