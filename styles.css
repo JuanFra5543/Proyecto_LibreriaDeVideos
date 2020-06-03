@@ -126,6 +126,7 @@ La propiedad de outline es para el recuadro que rodea
 el elemento cuando contiene un link o un input*/
 .input{
     background-color: transparent;
+    color: white;
     border-left: 0px;
     border-right: 0px;
     border-top: 0px;
@@ -153,6 +154,7 @@ de los elementos de tipo formulario*/
     letter-spacing: 1px;
     height: 50px;
     margin: 10px 0;
+    outline: none;
 }
 
 /*Estos son los estilos para el footer de la pagina*/
