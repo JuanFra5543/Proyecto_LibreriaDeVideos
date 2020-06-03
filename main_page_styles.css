@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    background-color: #10002B;
+    font-family: 'Muli', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #10002B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 90px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.header__menu{
+    margin-right: 30px;
+    align-items: center;
+}
+.header__menu--profile{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    
+}
+.header__menu--profile p{
+    margin: 0;
+    color: white;
+}
+
+.header__menu ul{
+    display: none;
+    margin: 0px 0px 0px -14px;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+}
+
+/*El hover permite estilizar un elemento cuando pasas el mouse sobre el*/
+.header__menu:hover ul, ul:hover{
+    /*hover ul = se estiliza cuando se pase sobre las ul en el menu
+      ul:hover = estiliza las ul que existan en el documento*/
+    display: inline;
+}
+.header__menu li{
+    margin: 10px 0px;
+}
+.header__menu li a{
+    color: white;
+    text-decoration: none;
+}
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
+/*Estilos para el buscador*/
+.main{
+    height: 300px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main__title{
+    font-size: 25px;
+    color: white;
+}
+.main__input{
+    background-color: rgba(255,255,255,0.1);
+    border-color: white;
+    color: white;
+    padding: 0 20px;
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: medium;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+/*Codigo para el texto dentro del buscador*/
+::placeholder{
+    color: white;
+}
+
+.categories__title{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+}
+
+/*-----------------------------------------------------*/
+/*-----Apartir de aqui son los estilos de carousel-----*/
+/*-----------------------------------------------------*/
+
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    overflow: hidden;
+    padding-left: 30px;
+    position: relative;
+}
+.carousel__conteiner{
+    /*WHITE-SPACE: es para el lineamiento de los objetos
+    en caso de tener "nowrap" significa que los deja en 
+    una linea infinita sin salto de linea a todos los items
+    que se encuenten dentro del elemento*/
+    white-space: nowrap;
+    font-size: 0;
+    margin: 70px 0;
+    padding-bottom: 10px;
+    transition: 450ms transform;
+}
+.carousel__conteiner:hover .carousel-item{
+    opacity: 0.3;
+}
+.carousel__conteiner:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    margin-left: 25px;
+}
+.carousel-item{
+    background-color: #7B2CBF;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel-item__img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.carousel-item__details img{
+    width: 20px;
+}
+
+.carousel-item__details:hover{
+    opacity: 1;
+}
+.carousel-item__details--title, .carousel-item__details--subtitle{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*Estos son los estilos para el footer de la pagina*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #10002B;
+    display: flex;
+    align-items: center;
+}
+
+/*Esto es para darle estilo a los links que se encuentran
+en el pie de la pagina*/
+.footer a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
