@@ -11,8 +11,9 @@ body{
     align-items: center;
 }
 .header__img{
-    width: 200px;
-    margin: 10px 5px;
+    width: 90px;
+    margin-left: 20px;
+    padding-top: 10px;
 }
 /*login sera el bloque van los estilos de la seccion
 mas externa, se va a utilizar la estructura de 
