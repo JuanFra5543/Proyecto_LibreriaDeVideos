@@ -5,7 +5,7 @@ body{
 .header{
     width: 100%;
     height: 80px;
-    background-color: #21C08B;
+    background-color: #C77DFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ body{
 mas externa, se va a utilizar la estructura de 
 BEM (Bloque-Elemento-Modificador)*/
 .login{
-    background: linear-gradient(#21C08B,#8F57FD);
+    background: linear-gradient(#C77DFF,#240046);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +103,11 @@ google y de twitter*/
     text-decoration: underline;
 }
 
+/*En .input se estiliza el formulario de ingreso
+de texto al igual que el boton de "Iniciar Sesión"
+-------------------------------------------------
+La propiedad de outline es para el recuadro que rodea
+el elemento cuando contiene un link o un input*/
 .input{
     background-color: transparent;
     border-left: 0px;
@@ -116,10 +121,11 @@ google y de twitter*/
     font-size: 16px;
     outline: none;
 }
+/*El pseudo-elemento placeholder es el contenido dentro
+de los elementos de tipo formulario*/
 ::placeholder{
     color: white;
 }
-
 .button{
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
@@ -137,7 +143,7 @@ google y de twitter*/
 .footer{
     width: 100%;
     height: 80px;
-    background-color: #8F57FD;
+    background-color: #240046;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -147,7 +153,11 @@ google y de twitter*/
 en el pie de la pagina*/
 .footer a{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
-    margin: 0 5px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
