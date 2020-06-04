@@ -184,7 +184,10 @@ body{
     margin: 0;
 }
 
-/*Estos son los estilos para el footer de la pagina*/
+/*-----------------------------------------------------*/
+/*------Apartir de aqui son los estilos de footer------*/
+/*-----------------------------------------------------*/
+
 .footer{
     width: 100%;
     height: 100px;

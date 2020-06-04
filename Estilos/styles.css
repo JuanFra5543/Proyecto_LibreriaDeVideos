@@ -156,6 +156,11 @@ de los elementos de tipo formulario*/
     margin: 10px 0;
     outline: none;
 }
+.button a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
 
 /*Estos son los estilos para el footer de la pagina*/
 .footer{
