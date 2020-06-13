@@ -1,3 +1,5 @@
+$blanco: white;
+
 body{
     margin: 0;
     background-color: #10002B;
@@ -93,7 +95,7 @@ body{
 }
 /*Codigo para el texto dentro del buscador*/
 ::placeholder{
-    color: white;
+    color: $blanco;
 }
 
 .categories__title{
