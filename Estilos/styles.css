@@ -1,122 +1,131 @@
-body{
-    margin: 0;
-    font-family: 'Muli', sans-serif;
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
 }
-.header{
-    width: 100%;
-    height: 80px;
-    background-color: #C77DFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #C77DFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header__img{
-    width: 90px;
-    margin-left: 20px;
-    padding-top: 10px;
+
+.header__img {
+  width: 90px;
+  margin-left: 20px;
+  padding-top: 10px;
 }
+
 /*login sera el bloque van los estilos de la seccion
 mas externa, se va a utilizar la estructura de 
 BEM (Bloque-Elemento-Modificador)*/
-.login{
-    background: linear-gradient(#C77DFF,#240046);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+.login {
+  background: linear-gradient(#C77DFF, #240046);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
 }
+
 /*Dentro del Elemento __container estan
 los estilos para la "carta" de inicio de sesión*/
-.login__container{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
-    padding: 60px 40px;
-    border: 2px solid white;
-    color: white;
-    min-height: 650px;
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+.login__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  padding: 60px 40px;
+  border: 2px solid white;
+  color: white;
+  min-height: 650px;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 /*En el Modificador --form estan los elementos
 input y el button que permiten el ingreso de
 usuario y contraseña*/
-.login__container--form{
-    display: flex;
-    flex-direction: column;
+.login__container--form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*En el Modificador --rember-me estan los elementos
 de checkbox para el recuerdame y un link a la pagina
 de "Olvide mi contraseña"*/
-.login__container--remember-me{
-    margin-top: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
+.login__container--remember-me {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 /*Para estilizar los links de "Recuerdame"*/
-.login__container--remember-me a{
-    text-decoration: none;
-    color: white;
-    align-self: center;
+.login__container--remember-me a {
+  text-decoration: none;
+  color: white;
+  align-self: center;
 }
 
 /*pseudo-clase hover permite que cuando el puntero se 
 posicione sobre el elemento ocurra una accion*/
-.login__container--remember-me a:hover{
-    text-decoration: underline;
+.login__container--remember-me a:hover {
+  text-decoration: underline;
 }
 
 /*elemento > div me permite tomar todos los divs 
 que se encuentren dentro de ese elemento*/
-.login__container--social-media > div{
-    display:flex;
-    align-items: center;
-    font-size: 14px;
-    margin: 10px 0;
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 /*Aqui se le corrige el tamaño de los iconos de 
 google y de twitter*/
-.login__container--social-media > div > img{
-    width: 30px;
-    margin-right: 10px;
+.login__container--social-media > div > img {
+  width: 30px;
+  margin-right: 10px;
 }
 
 /*Estilos para el container y link del registro*/
-.login__container--register{
-    font-size: 14px;
+.login__container--register {
+  font-size: 14px;
 }
-.login__container--register a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+
+.login__container--register a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
-.login__container--register a:hover{
-    text-decoration: underline;
+
+.login__container--register a:hover {
+  text-decoration: underline;
 }
 
 /*Estilos para el link del Inicio sesión*/
-.login__container--ini-ses{
-    display: flex;
-    justify-content: center;
+.login__container--ini-ses {
+  display: flex;
+  justify-content: center;
 }
-.login__container--ini-ses a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+
+.login__container--ini-ses a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
-.login__container--ini-ses a:hover{
-    text-decoration: underline;
+
+.login__container--ini-ses a:hover {
+  text-decoration: underline;
 }
 
 /*En .input se estiliza el formulario de ingreso
@@ -124,79 +133,85 @@ de texto al igual que el boton de "Iniciar Sesión"
 -------------------------------------------------
 La propiedad de outline es para el recuadro que rodea
 el elemento cuando contiene un link o un input*/
-.input{
-    background-color: transparent;
-    color: white;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    border-bottom: 2px solid white;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    height: 50px;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    outline: none;
+.input {
+  background-color: transparent;
+  color: white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  height: 50px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  outline: none;
 }
+
 /*El pseudo-elemento placeholder es el contenido dentro
 de los elementos de tipo formulario*/
-::placeholder{
-    color: white;
+::placeholder {
+  color: white;
 }
-.button{
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    height: 50px;
-    margin: 10px 0;
-    outline: none;
+
+.button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 50px;
+  margin: 10px 0;
+  outline: none;
 }
-.button a{
-    color: white;
-    outline: none;
-    text-decoration: none;
+
+.button a {
+  color: white;
+  outline: none;
+  text-decoration: none;
 }
 
 /*Estos son los estilos para el footer de la pagina*/
-.footer{
-    width: 100%;
-    height: 80px;
-    background-color: #240046;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #240046;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*Esto es para darle estilo a los links que se encuentran
 en el pie de la pagina*/
-.footer a{
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    padding-left: 30px;
-    cursor: pointer;
+.footer a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding-left: 30px;
+  cursor: pointer;
 }
-.footer a:hover{
-    text-decoration: underline;
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /*Ajusta todos los elementos a dispositivos mas pequeños
 para asi poder mostrar la pagina desde un celular*/
-@media only screen and (max-width: 600px){
-    .login__container{
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
 
-    .footer{
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
