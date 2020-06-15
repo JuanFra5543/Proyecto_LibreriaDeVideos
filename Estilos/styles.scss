@@ -1,3 +1,8 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
 body{
     margin: 0;
     font-family: 'Muli', sans-serif;
@@ -6,9 +11,8 @@ body{
     width: 100%;
     height: 80px;
     background-color: #C77DFF;
-    display: flex;
+    @extend .flex;
     justify-content: space-between;
-    align-items: center;
 }
 .header__img{
     width: 90px;
@@ -20,8 +24,7 @@ mas externa, se va a utilizar la estructura de
 BEM (Bloque-Elemento-Modificador)*/
 .login{
     background: linear-gradient(#C77DFF,#240046);
-    display: flex;
-    align-items: center;
+    @extend .flex;
     justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
@@ -56,29 +59,26 @@ de "Olvide mi contraseña"*/
 .login__container--remember-me{
     margin-top: 10px;
     color: white;
-    display: flex;
+    @extend .flex;
     justify-content: space-between;
     font-size: 14px;
-}
-
-/*Para estilizar los links de "Recuerdame"*/
-.login__container--remember-me a{
-    text-decoration: none;
-    color: white;
-    align-self: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 
 /*pseudo-clase hover permite que cuando el puntero se 
 posicione sobre el elemento ocurra una accion*/
-.login__container--remember-me a:hover{
-    text-decoration: underline;
-}
+
 
 /*elemento > div me permite tomar todos los divs 
 que se encuentren dentro de ese elemento*/
 .login__container--social-media > div{
-    display:flex;
-    align-items: center;
+    @extend .flex;
     font-size: 14px;
     margin: 10px 0;
 }
@@ -99,24 +99,24 @@ google y de twitter*/
     font-weight: bold;
     text-decoration: none;
     color: white;
-}
-.login__container--register a:hover{
-    text-decoration: underline;
-}
+    a:hover{
+        text-decoration: underline;
+    }
+} 
 
 /*Estilos para el link del Inicio sesión*/
 .login__container--ini-ses{
     display: flex;
     justify-content: center;
-}
-.login__container--ini-ses a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-.login__container--ini-ses a:hover{
-    text-decoration: underline;
+    a{
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 
 /*En .input se estiliza el formulario de ingreso
@@ -155,11 +155,11 @@ de los elementos de tipo formulario*/
     height: 50px;
     margin: 10px 0;
     outline: none;
-}
-.button a{
-    color: white;
-    outline: none;
-    text-decoration: none;
+    a{
+        color: white;
+        outline: none;
+        text-decoration: none;
+    }
 }
 
 /*Estos son los estilos para el footer de la pagina*/
@@ -167,9 +167,8 @@ de los elementos de tipo formulario*/
     width: 100%;
     height: 80px;
     background-color: #240046;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
+    @extend .flex;
 }
 
 /*Esto es para darle estilo a los links que se encuentran

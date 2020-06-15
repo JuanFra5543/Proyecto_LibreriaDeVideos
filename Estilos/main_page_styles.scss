@@ -1,17 +1,22 @@
 $blanco: white;
+$ColorFondo: #10002B;
+
+.flex{
+    display: flex;
+    align-items: center;
+}
 
 body{
     margin: 0;
-    background-color: #10002B;
+    background-color: $ColorFondo;
     font-family: 'Muli', sans-serif;
 }
 .header{
     width: 100%;
     height: 80px;
-    background-color: #10002B;
-    display: flex;
+    background-color: $ColorFondo;
     justify-content: space-between;
-    align-items: center;
+    @extend .flex;
 }
 .header__img{
     width: 90px;
@@ -24,8 +29,7 @@ body{
 }
 .header__menu--profile{
     margin-right: 8px;
-    display: flex;
-    align-items: center;
+    @extend .flex;
 }
 
 .header__menu--profile img{
@@ -36,7 +40,7 @@ body{
 }
 .header__menu--profile p{
     margin: 0;
-    color: white;
+    color: $blanco;
 }
 
 .header__menu ul{
@@ -59,7 +63,7 @@ body{
     margin: 10px 0px;
 }
 .header__menu li a{
-    color: white;
+    color: $blanco;
     text-decoration: none;
 }
 .header__menu li a:hover{
@@ -70,19 +74,18 @@ body{
 .main{
     height: 300px;
     margin: 0 10px;
-    display: flex;
+    @extend .flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .main__title{
     font-size: 25px;
-    color: white;
+    color: $blanco;
 }
 .main__input{
     background-color: rgba(255,255,255,0.1);
-    border-color: white;
-    color: white;
+    border-color: $blanco;
+    color: $blanco;
     padding: 0 20px;
     width: 70%;
     height: 50px;
@@ -99,7 +102,7 @@ body{
 }
 
 .categories__title{
-    color: white;
+    color: $blanco;
     font-size: 16px;
     position: absolute;
     padding-left: 30px;
@@ -118,7 +121,7 @@ body{
     position: relative;
 }
 .carousel__conteiner{
-    /*WHITE-SPACE: es para el lineamiento de los objetos
+    /*$WHITE-SPACE: es para el lineamiento de los objetos
     en caso de tener "nowrap" significa que los deja en 
     una linea infinita sin salto de linea a todos los items
     que se encuenten dentro del elemento*/
@@ -181,7 +184,7 @@ body{
     opacity: 1;
 }
 .carousel-item__details--title, .carousel-item__details--subtitle{
-    color: white;
+    color: $blanco;
     font-weight: bold;
     margin: 0;
 }
@@ -193,15 +196,14 @@ body{
 .footer{
     width: 100%;
     height: 100px;
-    background-color: #10002B;
-    display: flex;
-    align-items: center;
+    background-color: $ColorFondo;
+    @extend .flex;
 }
 
 /*Esto es para darle estilo a los links que se encuentran
 en el pie de la pagina*/
 .footer a{
-    color: white;
+    color: $blanco;
     font-size: 14px;
     text-decoration: none;
     padding-left: 30px;

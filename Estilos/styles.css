@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.flex, .footer, .login__container--social-media > div, .login__container--remember-me, .login, .header {
+  display: flex;
+  align-items: center;
+}
+
 body {
   margin: 0;
   font-family: "Muli", sans-serif;
@@ -8,9 +13,7 @@ body {
   width: 100%;
   height: 80px;
   background-color: #C77DFF;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header__img {
@@ -24,8 +27,6 @@ mas externa, se va a utilizar la estructura de
 BEM (Bloque-Elemento-Modificador)*/
 .login {
   background: linear-gradient(#C77DFF, #240046);
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 0px 30px;
@@ -61,29 +62,22 @@ de "Olvide mi contraseña"*/
 .login__container--remember-me {
   margin-top: 10px;
   color: white;
-  display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-
-/*Para estilizar los links de "Recuerdame"*/
 .login__container--remember-me a {
   text-decoration: none;
   color: white;
-  align-self: center;
 }
-
-/*pseudo-clase hover permite que cuando el puntero se 
-posicione sobre el elemento ocurra una accion*/
 .login__container--remember-me a:hover {
   text-decoration: underline;
 }
 
+/*pseudo-clase hover permite que cuando el puntero se 
+posicione sobre el elemento ocurra una accion*/
 /*elemento > div me permite tomar todos los divs 
 que se encuentren dentro de ese elemento*/
 .login__container--social-media > div {
-  display: flex;
-  align-items: center;
   font-size: 14px;
   margin: 10px 0;
 }
@@ -106,8 +100,7 @@ google y de twitter*/
   text-decoration: none;
   color: white;
 }
-
-.login__container--register a:hover {
+.login__container--register a a:hover {
   text-decoration: underline;
 }
 
@@ -116,14 +109,12 @@ google y de twitter*/
   display: flex;
   justify-content: center;
 }
-
 .login__container--ini-ses a {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   color: white;
 }
-
 .login__container--ini-ses a:hover {
   text-decoration: underline;
 }
@@ -167,7 +158,6 @@ de los elementos de tipo formulario*/
   margin: 10px 0;
   outline: none;
 }
-
 .button a {
   color: white;
   outline: none;
@@ -179,9 +169,7 @@ de los elementos de tipo formulario*/
   width: 100%;
   height: 80px;
   background-color: #240046;
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 /*Esto es para darle estilo a los links que se encuentran

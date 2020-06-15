@@ -1,3 +1,8 @@
+.flex, .footer, .main, .header__menu--profile, .header {
+  display: flex;
+  align-items: center;
+}
+
 body {
   margin: 0;
   background-color: #10002B;
@@ -8,9 +13,7 @@ body {
   width: 100%;
   height: 80px;
   background-color: #10002B;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header__img {
@@ -26,8 +29,6 @@ body {
 
 .header__menu--profile {
   margin-right: 8px;
-  display: flex;
-  align-items: center;
 }
 
 .header__menu--profile img {
@@ -75,9 +76,7 @@ body {
 .main {
   height: 300px;
   margin: 0 10px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -126,7 +125,7 @@ body {
 }
 
 .carousel__conteiner {
-  /*WHITE-SPACE: es para el lineamiento de los objetos
+  /*$WHITE-SPACE: es para el lineamiento de los objetos
   en caso de tener "nowrap" significa que los deja en 
   una linea infinita sin salto de linea a todos los items
   que se encuenten dentro del elemento*/
@@ -208,8 +207,6 @@ body {
   width: 100%;
   height: 100px;
   background-color: #10002B;
-  display: flex;
-  align-items: center;
 }
 
 /*Esto es para darle estilo a los links que se encuentran
